@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5d8cx5a06di5"]
+
+[ext_resource type="Script" path="res://Scripts/GoToNextLvl.gd" id="1_h5q6s"]
+[ext_resource type="Texture2D" uid="uid://ch4wvmuy76ksd" path="res://icon.svg" id="2_xtjcu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wx0ef"]
+size = Vector2(24, 20)
+
+[node name="GoToNextLvl" type="Area2D"]
+position = Vector2(9, 10)
+script = ExtResource("1_h5q6s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-9, -9.75)
+scale = Vector2(0.1875, 0.152344)
+texture = ExtResource("2_xtjcu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-9, -10)
+shape = SubResource("RectangleShape2D_wx0ef")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

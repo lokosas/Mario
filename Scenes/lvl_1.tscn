@@ -34,19 +34,19 @@ visible = false
 position = Vector2(1755, 512)
 PathNextLvl = "res://Scenes/lvl_2.tscn"
 
-[node name="Label" type="Label" parent="."]
-offset_left = 115.0
-offset_top = 496.0
-offset_right = 155.0
-offset_bottom = 519.0
-script = ExtResource("4_11pdf")
-
 [node name="KIllzone" parent="." instance=ExtResource("6_36n15")]
 position = Vector2(360.03, 664)
 
 [node name="KIllzone2" parent="." instance=ExtResource("6_36n15")]
 position = Vector2(274, 666)
 scale = Vector2(30, 3)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 115.0
+offset_top = 496.0
+offset_right = 155.0
+offset_bottom = 519.0
+script = ExtResource("4_11pdf")
 
 [node name="Blue slime" parent="." node_paths=PackedStringArray("player") instance=ExtResource("8_xl5qg")]
 position = Vector2(763, 526)

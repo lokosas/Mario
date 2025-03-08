@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://brnb7de5ophci"]
+
+[ext_resource type="Script" uid="uid://cg6fjrbkbnd2f" path="res://death.gd" id="1_aug7c"]
+
+[node name="Death" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aug7c")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 469.0
+offset_top = 196.0
+offset_right = 604.0
+offset_bottom = 269.0
+text = "You died"

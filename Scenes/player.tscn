@@ -165,15 +165,17 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7hcx7"]
 _data = {
-"RESET": SubResource("Animation_7aak4"),
-"Run": SubResource("Animation_p5ked"),
-"Run Left": SubResource("Animation_m0i0h")
+&"RESET": SubResource("Animation_7aak4"),
+&"Run": SubResource("Animation_p5ked"),
+&"Run Left": SubResource("Animation_m0i0h")
 }
 
 [node name="Player" type="CharacterBody2D"]
 script = SubResource("GDScript_d8mog")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-8.9407e-07, 0)
 texture = ExtResource("1_j2hw8")
 flip_h = true
 hframes = 7

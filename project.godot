@@ -11,13 +11,18 @@ config_version=5
 [application]
 
 config/name="Supermario-egen"
-run/main_scene="res://Scenes/lvl_1.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+run/main_scene="res://main_menu.tscn"
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Global="*res://Scripts/Global.gd"
+
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_height"
 
 [editor_plugins]
 

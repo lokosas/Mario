@@ -187,7 +187,7 @@ shape = SubResource("RectangleShape2D_00le0")
 
 [node name="PlayerAnimations" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_7hcx7")
+&"": SubResource("AnimationLibrary_7hcx7")
 }
 speed_scale = 11.005
 

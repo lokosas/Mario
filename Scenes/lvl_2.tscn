@@ -28,7 +28,8 @@ position = Vector2(-528, 175)
 
 [node name="GoToNextLvl" parent="." instance=ExtResource("4_kls05")]
 visible = false
-position = Vector2(1385, 105)
+position = Vector2(1386, 86)
+PathNextLvl = "res://Scenes/lvl_3.tscn"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_2b72q")

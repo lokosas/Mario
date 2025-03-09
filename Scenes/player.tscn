@@ -28,6 +28,7 @@ func _physics_process(delta):
 	
 	if Input.is_action_just_pressed(\"Respawn\"):
 		self.position = PlayerStartPosition
+		
 	
 	# Lägger till gravitation OM spelaren INTE är på marken.
 	if not is_on_floor():
@@ -94,6 +95,7 @@ size = Vector2(14, 29)
 
 [sub_resource type="Animation" id="Animation_7aak4"]
 length = 0.001
+step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true

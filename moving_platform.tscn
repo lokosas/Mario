@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://3xturqm4f4wi"]
+
+[ext_resource type="Script" uid="uid://bmwlrupaa82sk" path="res://moving_platform.gd" id="1_hrpga"]
+[ext_resource type="Texture2D" uid="uid://b5biq22tauo24" path="res://Assets/lokwilm-Tileset-orngt-export.png" id="2_f8lbu"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oaxfr"]
+texture = ExtResource("2_f8lbu")
+2:0/next_alternative_id = 3
+2:0/0 = 0
+3:0/next_alternative_id = 2
+3:0/0 = 0
+4:0/next_alternative_id = 2
+4:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_n0cw3"]
+sources/0 = SubResource("TileSetAtlasSource_oaxfr")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0kgt5"]
+size = Vector2(44, 13)
+
+[node name="MovingPlatform" type="Node2D"]
+script = ExtResource("1_hrpga")
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="AnimatableBody2D"]
+texture_filter = 1
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0)
+tile_set = SubResource("TileSet_n0cw3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
+texture_filter = 1
+position = Vector2(25, 6.5)
+shape = SubResource("RectangleShape2D_0kgt5")
+debug_color = Color(0.966124, 2.21401e-06, 0.482475, 0.42)

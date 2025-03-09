@@ -116,7 +116,7 @@ position = Vector2(-6.5, 10.625)
 shape = SubResource("RectangleShape2D_fjqne")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
-[connection signal="body_entered" from="DamageHitbox" to="." method="_on_attack_hitbox_body_entered"]
 [connection signal="body_entered" from="DamageHitbox" to="." method="_on_damage_hitbox_body_entered"]
+[connection signal="body_entered" from="DamageHitbox" to="." method="_on_attack_hitbox_body_entered"]
 [connection signal="area_shape_entered" from="AttackHitBox" to="." method="_on_attack_hit_box_area_shape_entered"]
 [connection signal="body_entered" from="AttackHitBox" to="." method="_on_attack_hit_box_body_entered"]

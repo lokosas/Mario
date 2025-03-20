@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhg0m71s445yg"
-path="res://.godot/imported/OverWorldBG.png-d42af636fc1ae63bb5d49e146a31aa3a.ctex"
+uid="uid://ded74rhh6t4nf"
+path="res://.godot/imported/Button-Quit-.png-cbe3852b2632d323c97705b6c08c50a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/OverWorldBG.png"
-dest_files=["res://.godot/imported/OverWorldBG.png-d42af636fc1ae63bb5d49e146a31aa3a.ctex"]
+source_file="res://Assets/Random/Button-Quit-.png"
+dest_files=["res://.godot/imported/Button-Quit-.png-cbe3852b2632d323c97705b6c08c50a4.ctex"]
 
 [params]
 

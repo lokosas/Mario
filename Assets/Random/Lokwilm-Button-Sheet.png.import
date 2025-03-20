@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ct8h2sxa53g83"
-path="res://.godot/imported/TilesOverWorldBlocks.png-4ab5f02a3235f88ded2eee40ed99239d.ctex"
+uid="uid://c8wfccb3vnbig"
+path="res://.godot/imported/Lokwilm-Button-Sheet.png-4d8f07453cb73870a48378ffd8a2da10.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TilesOverWorldBlocks.png"
-dest_files=["res://.godot/imported/TilesOverWorldBlocks.png-4ab5f02a3235f88ded2eee40ed99239d.ctex"]
+source_file="res://Assets/Random/Lokwilm-Button-Sheet.png"
+dest_files=["res://.godot/imported/Lokwilm-Button-Sheet.png-4d8f07453cb73870a48378ffd8a2da10.ctex"]
 
 [params]
 

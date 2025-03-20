@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dei4d2m36ijl5"
-path="res://.godot/imported/cloud png.png-4b10195baa4d0a6d77d71808016e3299.ctex"
+uid="uid://bgaci1ykditvt"
+path="res://.godot/imported/BigMarioSpriteSheet.png-7e1268ea690176510eebdf19a27ad3f5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/cloud png.png"
-dest_files=["res://.godot/imported/cloud png.png-4b10195baa4d0a6d77d71808016e3299.ctex"]
+source_file="res://Assets/Random/BigMarioSpriteSheet.png"
+dest_files=["res://.godot/imported/BigMarioSpriteSheet.png-7e1268ea690176510eebdf19a27ad3f5.ctex"]
 
 [params]
 

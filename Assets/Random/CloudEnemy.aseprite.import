@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://bk6t6qi7jnrg6"
+path="res://.godot/imported/CloudEnemy.aseprite-e0b9ce0bf7253275d2706117c3517e43.res"
+
+[deps]
+
+source_file="res://Assets/Random/CloudEnemy.aseprite"
+dest_files=["res://.godot/imported/CloudEnemy.aseprite-e0b9ce0bf7253275d2706117c3517e43.res"]
+
+[params]
+

@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://d2y7v4xtb114q"]
 
 [ext_resource type="Script" uid="uid://hyxwg3n0ta2" path="res://Scripts/lvl_2.gd" id="1_nq3gp"]
-[ext_resource type="TileSet" uid="uid://bn34ocmmatbxb" path="res://Assets/World Building Blocks.tres" id="2_o6ewb"]
+[ext_resource type="TileSet" uid="uid://bn34ocmmatbxb" path="res://Assets/Random/World Building Blocks.tres" id="2_o6ewb"]
 [ext_resource type="PackedScene" uid="uid://dt1b5j8gsjgcj" path="res://Scenes/player.tscn" id="3_gy87s"]
 [ext_resource type="PackedScene" uid="uid://c5d8cx5a06di5" path="res://Scripts/go_to_next_lvl.tscn" id="4_kls05"]
 [ext_resource type="AudioStream" uid="uid://ddybfeypwfw73" path="res://Music/slow-2021-10-19_-_Funny_Bit_-_www.FesliyanStudios.com.mp3" id="5_2b72q"]

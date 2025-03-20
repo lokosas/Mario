@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://bcv6asqsdkg70"]
 
 [ext_resource type="Script" uid="uid://jvuipyivdfgj" path="res://Scripts/lvl_1.gd" id="1_bd06i"]
-[ext_resource type="TileSet" uid="uid://bn34ocmmatbxb" path="res://Assets/World Building Blocks.tres" id="2_t5jq5"]
+[ext_resource type="TileSet" uid="uid://bn34ocmmatbxb" path="res://Assets/Random/World Building Blocks.tres" id="2_t5jq5"]
 [ext_resource type="PackedScene" uid="uid://dt1b5j8gsjgcj" path="res://Scenes/player.tscn" id="3_vv4pq"]
 [ext_resource type="Script" uid="uid://ccd3cwn0ffe0d" path="res://Scenes/label.gd" id="4_11pdf"]
 [ext_resource type="AudioStream" uid="uid://jrfhkcxe22ak" path="res://Music/01-Main-Theme-Overworld.mp3" id="4_atfdb"]

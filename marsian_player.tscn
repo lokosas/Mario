@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://cqdf1a3ms2iqn"]
 
-[ext_resource type="Texture2D" uid="uid://iuumk1yey1nc" path="res://Assets/Animation-SpriteSheet-Sheet.png" id="1_bbsfr"]
+[ext_resource type="Texture2D" uid="uid://iuumk1yey1nc" path="res://Assets/Random/Animation-SpriteSheet-Sheet.png" id="1_bbsfr"]
 
 [sub_resource type="Animation" id="Animation_ucl67"]
 resource_name = "FAliing"

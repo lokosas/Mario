@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8wfccb3vnbig"
-path="res://.godot/imported/Lokwilm-Button-Sheet.png-56097850844ac1eb374f1ff82085ed2f.ctex"
+uid="uid://cfhmtrnp6at2k"
+path="res://.godot/imported/Play-Button_.png-7e03fef7828aa00cd8531a844f02a1c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Lokwilm-Button-Sheet.png"
-dest_files=["res://.godot/imported/Lokwilm-Button-Sheet.png-56097850844ac1eb374f1ff82085ed2f.ctex"]
+source_file="res://Assets/Random/Play-Button_.png"
+dest_files=["res://.godot/imported/Play-Button_.png-7e03fef7828aa00cd8531a844f02a1c2.ctex"]
 
 [params]
 

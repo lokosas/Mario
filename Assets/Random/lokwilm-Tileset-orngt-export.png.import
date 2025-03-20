@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfhmtrnp6at2k"
-path="res://.godot/imported/Play-Button_.png-639f911f65d5eb96230b3f24caa51e7a.ctex"
+uid="uid://b5biq22tauo24"
+path="res://.godot/imported/lokwilm-Tileset-orngt-export.png-73ed67478c1ebe64ed25118ac89a6564.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Play-Button_.png"
-dest_files=["res://.godot/imported/Play-Button_.png-639f911f65d5eb96230b3f24caa51e7a.ctex"]
+source_file="res://Assets/Random/lokwilm-Tileset-orngt-export.png"
+dest_files=["res://.godot/imported/lokwilm-Tileset-orngt-export.png-73ed67478c1ebe64ed25118ac89a6564.ctex"]
 
 [params]
 

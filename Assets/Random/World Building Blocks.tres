@@ -1,9 +1,9 @@
 [gd_resource type="TileSet" load_steps=10 format=3 uid="uid://bn34ocmmatbxb"]
 
-[ext_resource type="Texture2D" uid="uid://ct8h2sxa53g83" path="res://Assets/TilesOverWorldBlocks.png" id="1_5dnpe"]
-[ext_resource type="Texture2D" uid="uid://bhg0m71s445yg" path="res://Assets/OverWorldBG.png" id="2_tv7s5"]
-[ext_resource type="Texture2D" uid="uid://c7gmauxxguoop" path="res://Assets/Cloud.png" id="3_5f25v"]
-[ext_resource type="Texture2D" uid="uid://b5biq22tauo24" path="res://Assets/lokwilm-Tileset-orngt-export.png" id="3_p6763"]
+[ext_resource type="Texture2D" uid="uid://ct8h2sxa53g83" path="res://Assets/Random/TilesOverWorldBlocks.png" id="1_5dnpe"]
+[ext_resource type="Texture2D" uid="uid://bhg0m71s445yg" path="res://Assets/Random/OverWorldBG.png" id="2_tv7s5"]
+[ext_resource type="Texture2D" uid="uid://c7gmauxxguoop" path="res://Assets/Random/Cloud.png" id="3_5f25v"]
+[ext_resource type="Texture2D" uid="uid://b5biq22tauo24" path="res://Assets/Random/lokwilm-Tileset-orngt-export.png" id="3_p6763"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_majyu"]
 texture = ExtResource("1_5dnpe")

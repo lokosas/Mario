@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7gmauxxguoop"
-path="res://.godot/imported/Cloud.png-4250df8913900f919d931d6ca919b2fc.ctex"
+uid="uid://ct8h2sxa53g83"
+path="res://.godot/imported/TilesOverWorldBlocks.png-4102eab709e16141298c8718ba5189b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cloud.png"
-dest_files=["res://.godot/imported/Cloud.png-4250df8913900f919d931d6ca919b2fc.ctex"]
+source_file="res://Assets/Random/TilesOverWorldBlocks.png"
+dest_files=["res://.godot/imported/TilesOverWorldBlocks.png-4102eab709e16141298c8718ba5189b7.ctex"]
 
 [params]
 

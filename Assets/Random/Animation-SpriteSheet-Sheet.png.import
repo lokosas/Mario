@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8cy70y5sff4g"
-path="res://.godot/imported/Slime walking.png-f0720f41b68a6cbd19b590c36fcd3fad.ctex"
+uid="uid://iuumk1yey1nc"
+path="res://.godot/imported/Animation-SpriteSheet-Sheet.png-d2a75ffb58f812821b31aabc42ddfc27.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Slime walking.png"
-dest_files=["res://.godot/imported/Slime walking.png-f0720f41b68a6cbd19b590c36fcd3fad.ctex"]
+source_file="res://Assets/Random/Animation-SpriteSheet-Sheet.png"
+dest_files=["res://.godot/imported/Animation-SpriteSheet-Sheet.png-d2a75ffb58f812821b31aabc42ddfc27.ctex"]
 
 [params]
 

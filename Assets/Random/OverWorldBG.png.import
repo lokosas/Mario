@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://iuumk1yey1nc"
-path="res://.godot/imported/Animation-SpriteSheet-Sheet.png-b2118049b8823120feb1d39d6c34f40d.ctex"
+uid="uid://bhg0m71s445yg"
+path="res://.godot/imported/OverWorldBG.png-fae9ef87a6d67a68ac4273ef367196f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Animation-SpriteSheet-Sheet.png"
-dest_files=["res://.godot/imported/Animation-SpriteSheet-Sheet.png-b2118049b8823120feb1d39d6c34f40d.ctex"]
+source_file="res://Assets/Random/OverWorldBG.png"
+dest_files=["res://.godot/imported/OverWorldBG.png-fae9ef87a6d67a68ac4273ef367196f7.ctex"]
 
 [params]
 

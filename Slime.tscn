@@ -53,7 +53,7 @@ animations = [{
 size = Vector2(17, 4)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fjqne"]
-size = Vector2(31, 11.25)
+size = Vector2(29, 11.25)
 
 [node name="Blue slime" type="CharacterBody2D"]
 texture_filter = 1

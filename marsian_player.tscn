@@ -1,6 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://cqdf1a3ms2iqn"]
+[gd_scene load_steps=12 format=3 uid="uid://cqdf1a3ms2iqn"]
 
+[ext_resource type="Script" uid="uid://cp2c6komeqvi7" path="res://marsian_player.gd" id="1_107xn"]
 [ext_resource type="Texture2D" uid="uid://iuumk1yey1nc" path="res://Assets/Random/Animation-SpriteSheet-Sheet.png" id="1_bbsfr"]
+[ext_resource type="AudioStream" uid="uid://lx141vs8rycf" path="res://Music/Mario-Jump.mp3" id="3_vmq72"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vmq72"]
+size = Vector2(17, 24)
 
 [sub_resource type="Animation" id="Animation_ucl67"]
 resource_name = "FAliing"
@@ -118,6 +123,7 @@ _data = {
 }
 
 [node name="Marsian_Player" type="CharacterBody2D"]
+script = ExtResource("1_107xn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_bbsfr")
@@ -139,8 +145,15 @@ metadata/_aseprite_wizard_interface_config_ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, 4)
+shape = SubResource("RectangleShape2D_vmq72")
 
-[node name="Anim" type="AnimationPlayer" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_nhxtc")
 }
+
+[node name="Jumpsound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_vmq72")
+volume_db = -32.216
+pitch_scale = 1.24

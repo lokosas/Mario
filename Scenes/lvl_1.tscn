@@ -50,12 +50,10 @@ script = ExtResource("4_11pdf")
 position = Vector2(763, 526)
 safe_margin = 0.001
 player = NodePath("../Player")
-Speed = 35
 Chase_Speed = 65
 
 [node name="Blue slime2" parent="." node_paths=PackedStringArray("player") instance=ExtResource("8_xl5qg")]
 position = Vector2(1257, 565)
 safe_margin = 0.001
 player = NodePath("../Player")
-Speed = 35
 Chase_Speed = 65

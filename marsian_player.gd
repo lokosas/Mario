@@ -75,6 +75,8 @@ func handle_state(delta):
 			elif Input.is_action_pressed("Left"):
 				velocity.x -= Accel * delta * 50 * AirControl
 				$Sprite2D.scale.x = -1
+			else:
+				velocity.x = lerp(velocity.x, 0.0, 5.0 * delta)
 
 			if velocity.y >= 0 and current_state == State.JUMP:
 				current_state = State.FALLING

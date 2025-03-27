@@ -71,10 +71,7 @@ func _on_timer_timeout():
 	current_state = States.WANDER
 
 func _on_damage_hitbox_body_entered(body):
-	if body.name == "Marsian_Player":
-		queue_free()
+	queue_free()
 
 func _on_attack_hit_box_body_entered(body):
-	if body.name == "Marsian_Player":
-		print("Kill Marsian_Player")
-		Global.KillSignal = true
+	Global.KillSignal = true

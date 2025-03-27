@@ -19,6 +19,7 @@ layer_0/tile_data = PackedInt32Array(2621440, 0, 0, 2621441, 0, 0, 2555905, 0, 0
 
 [node name="Player" parent="." instance=ExtResource("3_vv4pq")]
 position = Vector2(246, 574)
+collision_layer = 2
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(275, 495)
@@ -30,14 +31,17 @@ stream = ExtResource("4_atfdb")
 autoplay = true
 
 [node name="GoToNextLvl" parent="." instance=ExtResource("5_s2e2l")]
-visible = false
 position = Vector2(1822, 512)
 scale = Vector2(1.36, 3.17)
+collision_layer = 8
+collision_mask = 2
 PathNextLvl = "res://Scenes/lvl_2.tscn"
 
 [node name="KIllzone2" parent="." instance=ExtResource("6_36n15")]
 position = Vector2(274, 666)
 scale = Vector2(30, 3)
+collision_layer = 8
+collision_mask = 2
 
 [node name="Label" type="Label" parent="."]
 offset_left = 115.0
@@ -48,6 +52,7 @@ script = ExtResource("4_11pdf")
 
 [node name="Blue slime" parent="." node_paths=PackedStringArray("player") instance=ExtResource("8_xl5qg")]
 position = Vector2(763, 526)
+collision_mask = 3
 safe_margin = 0.001
 player = NodePath("../Player")
 Chase_Speed = 65

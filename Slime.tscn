@@ -57,12 +57,15 @@ size = Vector2(29, 11.25)
 
 [node name="Blue slime" type="CharacterBody2D"]
 texture_filter = 1
+collision_layer = 12
+collision_mask = 5
 slide_on_ceiling = false
 script = ExtResource("1_dt84e")
 Speed = 35
 Chase_Speed = 80
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visibility_layer = 2
 position = Vector2(-6.25, 6.75)
 shape = SubResource("RectangleShape2D_14twb")
 
@@ -102,6 +105,8 @@ wait_time = 10.0
 one_shot = true
 
 [node name="DamageHitbox" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DamageHitbox"]
 modulate = Color(0, 0, 0, 1)
@@ -110,6 +115,9 @@ shape = SubResource("RectangleShape2D_i8th2")
 debug_color = Color(0.960509, 0, 0.515628, 0.42)
 
 [node name="AttackHitBox" type="Area2D" parent="."]
+visibility_layer = 3
+collision_layer = 4
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackHitBox"]
 modulate = Color(0, 1, 0.027451, 1)

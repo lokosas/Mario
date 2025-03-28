@@ -74,4 +74,9 @@ func _on_damage_hitbox_body_entered(body):
 	queue_free()
 
 func _on_attack_hit_box_body_entered(body):
-	Global.KillSignal = true
+	Global.Lives -= 1  
+	
+	if Global.Lives < 0:
+		get_tree().quit()
+	else:
+		get_tree().reload_current_scene()  # Reload scene when player loses a life

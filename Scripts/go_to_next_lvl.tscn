@@ -1,22 +1,144 @@
-[gd_scene load_steps=4 format=3 uid="uid://c5d8cx5a06di5"]
+[gd_scene load_steps=18 format=3 uid="uid://c5d8cx5a06di5"]
 
 [ext_resource type="Script" uid="uid://bbtal3rjjrjr" path="res://Scripts/GoToNextLvl.gd" id="1_h5q6s"]
-[ext_resource type="Texture2D" uid="uid://ch4wvmuy76ksd" path="res://icon.svg" id="2_xtjcu"]
+[ext_resource type="Texture2D" uid="uid://baqsuvu8clgey" path="res://Scripts/Portal.png" id="2_gbpcq"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wx0ef"]
-size = Vector2(24, 20)
+[sub_resource type="AtlasTexture" id="AtlasTexture_gbpcq"]
+atlas = ExtResource("2_gbpcq")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iys7p"]
+atlas = ExtResource("2_gbpcq")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mc32k"]
+atlas = ExtResource("2_gbpcq")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pwjmd"]
+atlas = ExtResource("2_gbpcq")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2v6p6"]
+atlas = ExtResource("2_gbpcq")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0rry"]
+atlas = ExtResource("2_gbpcq")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b4wgj"]
+atlas = ExtResource("2_gbpcq")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ise02"]
+atlas = ExtResource("2_gbpcq")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ohr4d"]
+atlas = ExtResource("2_gbpcq")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5m303"]
+atlas = ExtResource("2_gbpcq")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_twk4q"]
+atlas = ExtResource("2_gbpcq")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3m3wb"]
+atlas = ExtResource("2_gbpcq")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rot77"]
+atlas = ExtResource("2_gbpcq")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ufvx8"]
+animations = [{
+"frames": [{
+"duration": 1.3,
+"texture": SubResource("AtlasTexture_gbpcq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iys7p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mc32k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pwjmd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2v6p6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0rry")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b4wgj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ise02")
+}],
+"loop": true,
+"name": &"loop",
+"speed": 14.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ohr4d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5m303")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_twk4q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3m3wb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rot77")
+}],
+"loop": true,
+"name": &"opening",
+"speed": 14.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gbpcq"]
+radius = 20.3961
 
 [node name="GoToNextLvl" type="Area2D"]
 position = Vector2(9, 10)
+collision_mask = 10
 script = ExtResource("1_h5q6s")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-9, -9.75)
-scale = Vector2(0.1875, 0.152344)
-texture = ExtResource("2_xtjcu")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 5
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_ufvx8")
+animation = &"loop"
+frame_progress = 0.860661
+metadata/_aseprite_wizard_interface_config_ = {
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"should_round_fps": true,
+"slice": "",
+"source": "C:/Users/loke.osterholm/Documents/Pixel Art/Paralax/Mario-game/Portal.aseprite"
+}
+metadata/_aseprite_wizard_source_file_hash_ = "bc8ae9bbcf17f0f9b28c6657eb9e1514"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-9, -10)
-shape = SubResource("RectangleShape2D_wx0ef")
+position = Vector2(-1, -1.19209e-07)
+rotation = -1.83259
+shape = SubResource("CircleShape2D_gbpcq")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

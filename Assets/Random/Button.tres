@@ -1,0 +1,15 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://curr245jwo8ae"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nyr4e"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y3504"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xueqg"]
+
+[resource]
+Button/font_sizes/font_size = 32
+Button/fonts/font = null
+Button/icons/Background = null
+Button/styles/hover = SubResource("StyleBoxTexture_nyr4e")
+Button/styles/normal = SubResource("StyleBoxTexture_y3504")
+Button/styles/pressed = SubResource("StyleBoxTexture_xueqg")

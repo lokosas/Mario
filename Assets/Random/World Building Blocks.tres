@@ -73,6 +73,7 @@ separation = Vector2i(1, 1)
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_krgtf"]
 texture = ExtResource("2_tv7s5")
 separation = Vector2i(1, 1)
+texture_region_size = Vector2i(1, 1)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0

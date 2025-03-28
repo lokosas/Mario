@@ -32,10 +32,12 @@ func _physics_process(delta):
 	handle_state(delta)
 	move_and_slide()
 
-	if Global.KillSignal == true:
-		Global.KillSignal = false
+func _on_attack_hit_box_body_entered(body):
+	if body.is_in_group("BadGuys"):  # Assuming you have enemies in a group
 		Global.Lives -= 1
-		if Global.Lives == -1:
+		print("Lives left after attack:", Global.Lives)  # Debugging output
+
+		if Global.Lives < 0:
 			get_tree().quit()
 		else:
 			get_tree().reload_current_scene()

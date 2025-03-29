@@ -37,12 +37,11 @@ func _physics_process(delta):
 	if velocity.y > MaxFallSpeed:
 		velocity.y = MaxFallSpeed
 	
-	if Global.KillSignal == true:
-		Global.KillSignal = false
-		Global.Lives -= 1
-		if Global.Lives == -1:
-			get_tree().quit()
-		
+	if Global.KillSignal > 0:
+		Global.Lives -= Global.KillSignal
+		Global.KillSignal = 0
+		if Global.Lives < 0:
+			get_tree().change_scene_to_file(\"res://death.tscn\")
 		else:
 			get_tree().reload_current_scene()
 

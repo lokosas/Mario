@@ -230,5 +230,5 @@ offset = Vector2(0, 100)
 duration = 8.0
 
 [node name="GoToNextLvl" parent="." instance=ExtResource("4_kls05")]
-position = Vector2(-77, 90)
+position = Vector2(-222, 95)
 PathNextLvl = "res://Scenes/lvl_3.tscn"

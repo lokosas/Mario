@@ -19,6 +19,14 @@ func _ready():
 	PlayerStartPosition = self.position
 
 func _physics_process(delta):
+	if Global.KillSignal > 0:
+		Global.Lives -= Global.KillSignal
+		Global.KillSignal = 0
+		if Global.Lives < 0:
+			get_tree().change_scene_to_file("res://death.tscn")
+		else:
+			get_tree().reload_current_scene()
+	
 	velocity.x = clamp(velocity.x, -Speed, Speed)
 
 	if Input.is_action_just_pressed("Respawn"):
@@ -31,16 +39,6 @@ func _physics_process(delta):
 
 	handle_state(delta)
 	move_and_slide()
-
-func _on_attack_hit_box_body_entered(body):
-	if body.is_in_group("BadGuys"):  # Assuming you have enemies in a group
-		Global.Lives -= 1
-		print("Lives left after attack:", Global.Lives)  # Debugging output
-
-		if Global.Lives < 0:
-			get_tree().quit()
-		else:
-			get_tree().reload_current_scene()
 
 func handle_state(delta):
 	match current_state:

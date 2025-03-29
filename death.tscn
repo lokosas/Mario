@@ -295,7 +295,7 @@ offset_right = 604.0
 offset_bottom = 269.0
 text = "You died"
 
-[node name="Button" type="Button" parent="."]
+[node name="Retry" type="Button" parent="."]
 layout_mode = 0
 offset_left = 354.0
 offset_top = 269.0
@@ -313,9 +313,9 @@ theme_override_constants/line_spacing = 0
 theme_override_fonts/font = SubResource("FontFile_531me")
 theme_override_font_sizes/font_size = 46
 theme_override_styles/focus = SubResource("StyleBoxFlat_4868a")
-text = "Reatry"
+text = "Retry"
 
-[node name="quit" type="Button" parent="."]
+[node name="Quit" type="Button" parent="."]
 layout_mode = 0
 offset_left = 525.0
 offset_top = 268.0
@@ -334,3 +334,8 @@ theme_override_fonts/font = SubResource("FontFile_531me")
 theme_override_font_sizes/font_size = 46
 theme_override_styles/focus = SubResource("StyleBoxFlat_4868a")
 text = "Quit"
+
+[connection signal="button_up" from="Retry" to="." method="_on_retry_button_up"]
+[connection signal="pressed" from="Retry" to="." method="_on_retry_pressed"]
+[connection signal="button_up" from="Quit" to="." method="_on_quit_button_up"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

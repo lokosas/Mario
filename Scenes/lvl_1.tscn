@@ -200,7 +200,6 @@ tile_set = SubResource("TileSet_5iekr")
 [node name="KIllzone" parent="." instance=ExtResource("6_36n15")]
 position = Vector2(226, 263)
 scale = Vector2(100, 10)
-collision_mask = 10
 priority = 1
 
 [node name="Marsian_Player" parent="." instance=ExtResource("9_t5wd3")]
@@ -226,4 +225,7 @@ player = NodePath("../Marsian_Player")
 
 [node name="GoToNextLvl" parent="." instance=ExtResource("5_s2e2l")]
 position = Vector2(1017, 81)
+collision_mask = 2
 PathNextLvl = "res://Scenes/lvl_2.tscn"
+
+[connection signal="body_entered" from="GoToNextLvl" to="." method="_on_go_to_next_lvl_body_entered"]

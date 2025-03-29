@@ -142,10 +142,10 @@ color = Color(0.35859, 0.176673, 0.556412, 1)
 [node name="Button" type="Button" parent="ColorRect"]
 texture_filter = 1
 layout_mode = 0
-offset_left = 300.0
-offset_top = 293.0
-offset_right = 751.0
-offset_bottom = 500.0
+offset_left = 318.0
+offset_top = 295.0
+offset_right = 811.0
+offset_bottom = 502.0
 theme_override_colors/font_outline_color = Color(0.959457, 0.677995, 0.564277, 1)
 theme_override_colors/font_color = Color(1, 0.246588, 0.734519, 1)
 theme_override_constants/outline_size = 30
@@ -155,6 +155,7 @@ theme_override_constants/align_to_largest_stylebox = -45
 theme_override_constants/line_spacing = -260
 theme_override_fonts/font = SubResource("FontFile_6g68j")
 theme_override_font_sizes/font_size = 24
-text = "you won press me to play again"
+text = "   You won press me to play again"
+flat = true
 
 [connection signal="pressed" from="ColorRect/Button" to="." method="_on_button_pressed"]
